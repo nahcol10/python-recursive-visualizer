@@ -975,6 +975,141 @@ body.dark-mode .loading-overlay {
 }
 
 /* ============================================================
+   Convert Modal
+   ============================================================ */
+.convert-content {
+    max-width: 820px;
+}
+
+.convert-intro {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+}
+
+.convert-intro p {
+    margin: 0 0 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.convert-hint {
+    font-size: 13px !important;
+    color: var(--text-secondary) !important;
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+}
+
+.convert-hint code {
+    background: var(--bg-tertiary);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.copy-prompt-btn {
+    display: block;
+    width: 100%;
+    padding: 13px 20px;
+    background: var(--accent-blue);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-bottom: 12px;
+}
+
+.copy-prompt-btn:hover {
+    background: #0256c4;
+    transform: translateY(-1px);
+}
+
+.copy-prompt-btn.copied {
+    background: #2ea043;
+}
+
+.convert-rules-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.convert-rules-list li {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--accent-blue);
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.convert-rules-list code {
+    background: var(--bg-tertiary);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12.5px;
+    color: var(--accent-orange);
+}
+
+.convert-output {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.convert-output-block {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.convert-output-label {
+    display: block;
+    background: var(--bg-tertiary);
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.convert-output-block pre {
+    margin: 0;
+    padding: 10px 14px;
+    font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+    font-size: 13px;
+    color: var(--text-primary);
+    white-space: pre;
+    overflow-x: auto;
+    background: transparent;
+}
+
+.header-btns {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.convert-btn {
+    background: transparent !important;
+    color: var(--accent-blue) !important;
+    border-color: var(--accent-blue) !important;
+}
+
+/* ============================================================
    Help / Instructions Modal
    ============================================================ */
 .help-modal {
