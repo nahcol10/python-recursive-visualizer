@@ -1094,7 +1094,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Speed slider
     document.getElementById('speedSlider').addEventListener('input', function (e) {
-        animationSpeed = parseInt(e.target.value, 10);
+        animationSpeed = 2100 - parseInt(e.target.value, 10);
         if (isPlaying) { stopPlayback(); startPlayback(); }
     });
 
