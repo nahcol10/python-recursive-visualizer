@@ -1,8 +1,8 @@
-# Recursive Lens
+# python-recursive-visualizer
 
 An interactive, browser-based tool to visualize Python recursive function call trees in real time — powered by Pyodide. No server, no install, just open and run.
 
-![Recursive Lens Preview](images/image.png)
+![Python Recursive Visualizer Preview](images/image.png)
 
 ---
 
@@ -111,7 +111,7 @@ If your function uses inner functions, classes, or decorators, see [`CONVERT_PRO
 ## Project Structure
 
 ```
-recursion-visualizer/
+python-recursion-visualizer/
 ├── index.html          # UI layout and help modal
 ├── script.js           # Pyodide runner, tree builder, SVG renderer, zoom/pan
 ├── styles.css          # Theming, layout, node and edge styles
